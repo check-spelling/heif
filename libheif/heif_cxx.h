@@ -383,9 +383,9 @@ namespace heif {
 
     enum heif_compression_format get_compression_format() const noexcept;
 
-    bool supportes_lossy_compression() const noexcept;
+    bool supports_lossy_compression() const noexcept;
 
-    bool supportes_lossless_compression() const noexcept;
+    bool supports_lossless_compression() const noexcept;
 
 
     // throws Error
@@ -1029,14 +1029,14 @@ namespace heif {
     return heif_encoder_descriptor_get_compression_format(m_descriptor);
   }
 
-  inline bool EncoderDescriptor::supportes_lossy_compression() const noexcept
+  inline bool EncoderDescriptor::supports_lossy_compression() const noexcept
   {
-    return heif_encoder_descriptor_supportes_lossy_compression(m_descriptor);
+    return heif_encoder_descriptor_supports_lossy_compression(m_descriptor);
   }
 
-  inline bool EncoderDescriptor::supportes_lossless_compression() const noexcept
+  inline bool EncoderDescriptor::supports_lossless_compression() const noexcept
   {
-    return heif_encoder_descriptor_supportes_lossless_compression(m_descriptor);
+    return heif_encoder_descriptor_supports_lossless_compression(m_descriptor);
   }
 
   inline Encoder EncoderDescriptor::get_encoder() const

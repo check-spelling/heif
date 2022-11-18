@@ -1580,11 +1580,11 @@ struct heif_error heif_register_encoder_plugin(const struct heif_encoder_plugin*
 
 // DEPRECATED, typo in function name
 LIBHEIF_API
-int heif_encoder_descriptor_supportes_lossy_compression(const struct heif_encoder_descriptor*);
+int heif_encoder_descriptor_supports_lossy_compression(const struct heif_encoder_descriptor*);
 
 // DEPRECATED, typo in function name
 LIBHEIF_API
-int heif_encoder_descriptor_supportes_lossless_compression(const struct heif_encoder_descriptor*);
+int heif_encoder_descriptor_supports_lossless_compression(const struct heif_encoder_descriptor*);
 
 #ifdef __cplusplus
 }

@@ -472,7 +472,7 @@ opt_warning_types=all
 #
 # It's entirely deliberate that calling these functions can set
 # variables that don't obey the namespace limitations obeyed by the rest
-# of this file, in order that that they be as useful as possible to
+# of this file, in order that they be as useful as possible to
 # callers.
 
 
@@ -2935,7 +2935,7 @@ func_cygpath ()
     fi
   else
     func_cygpath_result=
-    func_error "LT_CYGPATH is empty or specifies non-existent file: '$LT_CYGPATH'"
+    func_error "LT_CYGPATH is empty or specifies nonexistent file: '$LT_CYGPATH'"
   fi
 }
 #end: func_cygpath
@@ -5864,7 +5864,7 @@ EOF
         {
           /* however, if there is an option in the LTWRAPPER_OPTION_PREFIX
              namespace, but it is not one of the ones we know about and
-             have already dealt with, above (inluding dump-script), then
+             have already dealt with, above (including dump-script), then
              report an error. Otherwise, targets might begin to believe
              they are allowed to use options in the LTWRAPPER_OPTION_PREFIX
              namespace. The first time any user complains about this, we'll
